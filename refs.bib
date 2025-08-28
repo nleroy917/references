@@ -706,6 +706,22 @@
   keywords = {Computational biology and bioinformatics,Epigenomics}
 }
 
+@misc{Brown2020,
+  title = {Language {{Models}} are {{Few-Shot Learners}}},
+  author = {Brown, Tom B. and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and {Herbert-Voss}, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel M. and Wu, Jeffrey and Winter, Clemens and Hesse, Christopher and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  year = {2020},
+  month = jul,
+  number = {arXiv:2005.14165},
+  eprint = {2005.14165},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2005.14165},
+  urldate = {2025-08-27},
+  abstract = {Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language}
+}
+
 @article{Buda2018,
   title = {A systematic study of the class imbalance problem in convolutional neural networks},
   author = {Buda, Mateusz and Maki, Atsuto and Mazurowski, Maciej A.},
@@ -1170,6 +1186,24 @@
   publisher = {bioRxiv},
   doi = {10.1101/2024.12.19.629312},
   urldate = {2025-06-22},
+  abstract = {Large-scale foundation models have recently opened new avenues for artificial general intelligence. Such a research paradigm has recently shown considerable promise in the analysis of single-cell sequencing data, while to date, efforts have centered on transcriptome. In contrast to gene expression, chromatin accessibility provides more decisive insights into cell states, shaping the chromatin regulatory landscapes that control transcription in distinct cell types. Yet, challenges also persist due to the abundance of features, high data sparsity, and the quasi-binary nature of these data. Here, we introduce EpiAgent, the first foundation model for single-cell epigenomic data, pretrained on a large-scale Human-scATAC-Corpus comprising approximately 5 million cells and 35 billion tokens. EpiAgent encodes chromatin accessibility patterns of cells as concise ``cell sentences,'' and employs bidirectional attention to capture cellular heterogeneity behind regulatory networks. With comprehensive benchmarks, we demonstrate that EpiAgent excels in typical downstream tasks, including unsupervised feature extraction, supervised cell annotation, and data imputation. By incorporating external embeddings, EpiAgent facilitates the prediction of cellular responses to both out-of-sample stimulated and unseen genetic perturbations, as well as reference data integration and query data mapping. By simulating the knockout of key cis-regulatory elements, EpiAgent enables in-silico treatment for cancer analysis. We further extended zero-shot capabilities of EpiAgent, allowing direct cell type annotation on newly sequenced datasets without additional training.},
+  archiveprefix = {bioRxiv},
+  chapter = {New Results},
+  copyright = {{\copyright} 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
+  langid = {english}
+}
+
+@misc{Chen2024a,
+  title = {{{EpiAgent}}: {{Foundation}} model for single-cell epigenomic data},
+  shorttitle = {{{EpiAgent}}},
+  author = {Chen, Xiaoyang and Li, Keyi and Cui, Xuejian and Wang, Zian and Jiang, Qun and Lin, Jiacheng and Li, Zhen and Gao, Zijing and Jiang, Rui},
+  year = {2024},
+  month = dec,
+  primaryclass = {New Results},
+  pages = {2024.12.19.629312},
+  publisher = {bioRxiv},
+  doi = {10.1101/2024.12.19.629312},
+  urldate = {2025-08-27},
   abstract = {Large-scale foundation models have recently opened new avenues for artificial general intelligence. Such a research paradigm has recently shown considerable promise in the analysis of single-cell sequencing data, while to date, efforts have centered on transcriptome. In contrast to gene expression, chromatin accessibility provides more decisive insights into cell states, shaping the chromatin regulatory landscapes that control transcription in distinct cell types. Yet, challenges also persist due to the abundance of features, high data sparsity, and the quasi-binary nature of these data. Here, we introduce EpiAgent, the first foundation model for single-cell epigenomic data, pretrained on a large-scale Human-scATAC-Corpus comprising approximately 5 million cells and 35 billion tokens. EpiAgent encodes chromatin accessibility patterns of cells as concise ``cell sentences,'' and employs bidirectional attention to capture cellular heterogeneity behind regulatory networks. With comprehensive benchmarks, we demonstrate that EpiAgent excels in typical downstream tasks, including unsupervised feature extraction, supervised cell annotation, and data imputation. By incorporating external embeddings, EpiAgent facilitates the prediction of cellular responses to both out-of-sample stimulated and unseen genetic perturbations, as well as reference data integration and query data mapping. By simulating the knockout of key cis-regulatory elements, EpiAgent enables in-silico treatment for cancer analysis. We further extended zero-shot capabilities of EpiAgent, allowing direct cell type annotation on newly sequenced datasets without additional training.},
   archiveprefix = {bioRxiv},
   chapter = {New Results},
@@ -1718,6 +1752,23 @@
   publisher = {arXiv},
   doi = {10.48550/arXiv.2010.11929},
   urldate = {2023-09-11},
+  abstract = {While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
+}
+
+@misc{Dosovitskiy2021a,
+  title = {An {{Image}} is {{Worth}} 16x16 {{Words}}: {{Transformers}} for {{Image Recognition}} at {{Scale}}},
+  shorttitle = {An {{Image}} is {{Worth}} 16x16 {{Words}}},
+  author = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  year = {2021},
+  month = jun,
+  number = {arXiv:2010.11929},
+  eprint = {2010.11929},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2010.11929},
+  urldate = {2025-08-27},
   abstract = {While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Recognition,Computer Science - Machine Learning}
@@ -2745,6 +2796,22 @@
   pmid = {35494926}
 }
 
+@misc{He2015,
+  title = {Deep {{Residual Learning}} for {{Image Recognition}}},
+  author = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  year = {2015},
+  month = dec,
+  number = {arXiv:1512.03385},
+  eprint = {1512.03385},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1512.03385},
+  urldate = {2025-08-27},
+  abstract = {Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57\% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28\% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC \& COCO 2015 competitions, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition}
+}
+
 @incollection{He2021,
   title = {{{CloudPred}}: {{Predicting Patient Phenotypes From Single-cell RNA-seq}}},
   shorttitle = {{{CloudPred}}},
@@ -3021,6 +3088,22 @@
   doi = {10.1093/bioinformatics/btx315},
   urldate = {2025-08-25},
   abstract = {Emerging single-cell technologies (e.g. single-cell ATAC-seq, DNase-seq or ChIP-seq) have made it possible to assay regulome of individual cells. Single-cell regulome data are highly sparse and discrete. Analyzing such data is challenging. User-friendly software tools are still lacking. We present SCRAT, a Single-Cell Regulome Analysis Toolbox with a graphical user interface, for studying cell heterogeneity using single-cell regulome data. SCRAT can be used to conveniently summarize regulatory activities according to different features (e.g. gene sets, transcription factor binding motif sites, etc.). Using these features, users can identify cell subpopulations in a heterogeneous biological sample, infer cell identities of each subpopulation, and discover distinguishing features such as gene sets and transcription factors that show different activities among subpopulations.SCRAT is freely available at https://zhiji.shinyapps.io/scrat as an online web service and at https://github.com/zji90/SCRAT as an R package.Supplementary data are available at Bioinformatics online.}
+}
+
+@article{Ji2021,
+  title = {{{DNABERT}}: pre-trained {{Bidirectional Encoder Representations}} from {{Transformers}} model for {{DNA-language}} in genome},
+  shorttitle = {{{DNABERT}}},
+  author = {Ji, Yanrong and Zhou, Zhihan and Liu, Han and Davuluri, Ramana V},
+  year = {2021},
+  month = aug,
+  journal = {Bioinformatics},
+  volume = {37},
+  number = {15},
+  pages = {2112--2120},
+  issn = {1367-4803},
+  doi = {10.1093/bioinformatics/btab083},
+  urldate = {2025-08-27},
+  abstract = {Deciphering the language of non-coding DNA is one of the fundamental problems in genome research. Gene regulatory code is highly complex due to the existence of polysemy and distant semantic relationship, which previous informatics methods often fail to capture especially in data-scarce scenarios.To address this challenge, we developed a novel pre-trained bidirectional encoder representation, named DNABERT, to capture global and transferrable understanding of genomic DNA sequences based on up and downstream nucleotide contexts. We compared DNABERT to the most widely used programs for genome-wide regulatory elements prediction and demonstrate its ease of use, accuracy and efficiency. We show that the single pre-trained transformers model can simultaneously achieve state-of-the-art performance on prediction of promoters, splice sites and transcription factor binding sites, after easy fine-tuning using small task-specific labeled data. Further, DNABERT enables direct visualization of nucleotide-level importance and semantic relationship within input sequences for better interpretability and accurate identification of conserved sequence motifs and functional genetic variant candidates. Finally, we demonstrate that pre-trained DNABERT with human genome can even be readily applied to other organisms with exceptional performance. We anticipate that the pre-trained DNABERT model can be fined tuned to many other sequence analyses tasks.The source code, pretrained and finetuned model for DNABERT are available at GitHub (https://github.com/jerryji1993/DNABERT).Supplementary data are available at Bioinformatics online.}
 }
 
 @article{Jiang2019a,
@@ -5340,6 +5423,22 @@ Subject\_term\_id: genetic-techniques;genetic-variation}
   abstract = {Oxidative stress is a hallmark of several aging and trauma related neurological disorders, but the precise details of how altered neuronal activity elicits subcellular redox changes have remained difficult to resolve. Current redox sensitive dyes and fluorescent proteins can quantify spatially distinct changes in reactive oxygen species levels, but multicolor probes are needed to accurately analyze compartment-specific redox dynamics in single cells that can be masked by population averaging. We previously engineered genetically encoded red-shifted redox-sensitive fluorescent protein sensors using a F{\"o}rster resonance energy transfer relay strategy. Here, we developed a second-generation excitation ratiometric sensor called rogRFP2 with improved red emission for quantitative live-cell imaging. Using this sensor to measure activity-dependent redox changes in individual cultured neurons, we observed an anticorrelation in which mitochondrial oxidation was accompanied by a concurrent reduction in the cytosol. This behavior was dependent on the activity of Complex I of the mitochondrial electron transport chain and could be modulated by the presence of cocultured astrocytes. We also demonstrated that the red fluorescent rogRFP2 facilitates ratiometric one- and two-photon redox imaging in rat brain slices and Drosophila retinas. Overall, the proof-of-concept studies reported here demonstrate that this new rogRFP2 redox sensor can be a powerful tool for understanding redox biology both in vitro and in vivo across model organisms.}
 }
 
+@misc{Raffel2023,
+  title = {Exploring the {{Limits}} of {{Transfer Learning}} with a {{Unified Text-to-Text Transformer}}},
+  author = {Raffel, Colin and Shazeer, Noam and Roberts, Adam and Lee, Katherine and Narang, Sharan and Matena, Michael and Zhou, Yanqi and Li, Wei and Liu, Peter J.},
+  year = {2023},
+  month = sep,
+  number = {arXiv:1910.10683},
+  eprint = {1910.10683},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1910.10683},
+  urldate = {2025-08-27},
+  abstract = {Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP). The effectiveness of transfer learning has given rise to a diversity of approaches, methodology, and practice. In this paper, we explore the landscape of transfer learning techniques for NLP by introducing a unified framework that converts all text-based language problems into a text-to-text format. Our systematic study compares pre-training objectives, architectures, unlabeled data sets, transfer approaches, and other factors on dozens of language understanding tasks. By combining the insights from our exploration with scale and our new ``Colossal Clean Crawled Corpus'', we achieve state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more. To facilitate future work on transfer learning for NLP, we release our data set, pre-trained models, and code.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
 @article{Rambold2019,
   title = {Meta-omics data and collection objects ({{MOD-CO}}): a conceptual schema and data model for processing sample data in meta-omics research},
   shorttitle = {Meta-omics data and collection objects ({{MOD-CO}})},
@@ -6604,6 +6703,23 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   abstract = {Style is an integral component of a sentence indicated by the choice of words a person makes. Different people have different ways of expressing themselves, however, they adjust their speaking and writing style to a social context, an audience, an interlocutor or the formality of an occasion. Text style transfer is defined as a task of adapting and/or changing the stylistic manner in which a sentence is written, while preserving the meaning of the original sentence. A systematic review of text style transfer methodologies using deep learning is presented in this paper. We point out the technological advances in deep neural networks that have been the driving force behind current successes in the fields of natural language understanding and generation. The review is structured around two key stages in the text style transfer process, namely, representation learning and sentence generation in a new style. The discussion highlights the commonalities and differences between proposed solutions as well as challenges and opportunities that are expected to direct and foster further research in the field.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+}
+
+@misc{Touvron2023,
+  title = {{{LLaMA}}: {{Open}} and {{Efficient Foundation Language Models}}},
+  shorttitle = {{{LLaMA}}},
+  author = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
+  year = {2023},
+  month = feb,
+  number = {arXiv:2302.13971},
+  eprint = {2302.13971},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2302.13971},
+  urldate = {2025-08-27},
+  abstract = {We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language}
 }
 
 @article{Traag2019,
