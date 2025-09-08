@@ -493,6 +493,23 @@
   keywords = {Adenocarcinoma,Classification,Lung cancer,PET/MRI,Squamous cell carcinoma,Texture analysis}
 }
 
+@misc{Beltagy2020,
+  title = {Longformer: {{The Long-Document Transformer}}},
+  shorttitle = {Longformer},
+  author = {Beltagy, Iz and Peters, Matthew E. and Cohan, Arman},
+  year = {2020},
+  month = dec,
+  number = {arXiv:2004.05150},
+  eprint = {2004.05150},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2004.05150},
+  urldate = {2025-09-08},
+  abstract = {Transformer-based models are unable to process long sequences due to their self-attention operation, which scales quadratically with the sequence length. To address this limitation, we introduce the Longformer with an attention mechanism that scales linearly with sequence length, making it easy to process documents of thousands of tokens or longer. Longformer's attention mechanism is a drop-in replacement for the standard self-attention and combines a local windowed attention with a task motivated global attention. Following prior work on long-sequence transformers, we evaluate Longformer on character-level language modeling and achieve state-of-the-art results on text8 and enwik8. In contrast to most prior work, we also pretrain Longformer and finetune it on a variety of downstream tasks. Our pretrained Longformer consistently outperforms RoBERTa on long document tasks and sets new state-of-the-art results on WikiHop and TriviaQA. We finally introduce the Longformer-Encoder-Decoder (LED), a Longformer variant for supporting long document generative sequence-to-sequence tasks, and demonstrate its effectiveness on the arXiv summarization dataset.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language}
+}
+
 @article{Belton2012,
   title = {Hi-{{C}}: {{A}} comprehensive technique to capture the conformation of genomes},
   shorttitle = {Hi-{{C}}},
@@ -1243,6 +1260,22 @@
   chapter = {New Results},
   copyright = {{\copyright} 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
   langid = {english}
+}
+
+@misc{Child2019,
+  title = {Generating {{Long Sequences}} with {{Sparse Transformers}}},
+  author = {Child, Rewon and Gray, Scott and Radford, Alec and Sutskever, Ilya},
+  year = {2019},
+  month = apr,
+  number = {arXiv:1904.10509},
+  eprint = {1904.10509},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1904.10509},
+  urldate = {2025-09-08},
+  abstract = {Transformers are powerful sequence models, but require time and memory that grows quadratically with the sequence length. In this paper we introduce sparse factorizations of the attention matrix which reduce this to \$O(n {\textbackslash}sqrt\{n\})\$. We also introduce a) a variation on architecture and initialization to train deeper networks, b) the recomputation of attention matrices to save memory, and c) fast attention kernels for training. We call networks with these changes Sparse Transformers, and show they can model sequences tens of thousands of timesteps long using hundreds of layers. We use the same architecture to model images, audio, and text from raw bytes, setting a new state of the art for density modeling of Enwik8, CIFAR-10, and ImageNet-64. We generate unconditional samples that demonstrate global coherence and great diversity, and show it is possible in principle to use self-attention to model sequences of length one million or more.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{Ching2018,
@@ -7239,6 +7272,23 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   keywords = {Cell-type annotation,Computational workflow,Integrate scRNA-seq and scATAC-seq,Predict transcriptional regulators,Single-cell ATAC-seq,Single-cell RNA-seq}
 }
 
+@misc{Wang2020a,
+  title = {Linformer: {{Self-Attention}} with {{Linear Complexity}}},
+  shorttitle = {Linformer},
+  author = {Wang, Sinong and Li, Belinda Z. and Khabsa, Madian and Fang, Han and Ma, Hao},
+  year = {2020},
+  month = jun,
+  number = {arXiv:2006.04768},
+  eprint = {2006.04768},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2006.04768},
+  urldate = {2025-09-08},
+  abstract = {Large transformer models have shown extraordinary success in achieving state-of-the-art results in many natural language processing applications. However, training and deploying these models can be prohibitively costly for long sequences, as the standard self-attention mechanism of the Transformer uses \$O(n{\textasciicircum}2)\$ time and space with respect to sequence length. In this paper, we demonstrate that the self-attention mechanism can be approximated by a low-rank matrix. We further exploit this finding to propose a new self-attention mechanism, which reduces the overall self-attention complexity from \$O(n{\textasciicircum}2)\$ to \$O(n)\$ in both time and space. The resulting linear transformer, the {\textbackslash}textit\{Linformer\}, performs on par with standard Transformer models, while being much more memory- and time-efficient.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning}
+}
+
 @article{Wang2021,
   title = {{{ATACdb}}: a comprehensive human chromatin accessibility database},
   shorttitle = {{{ATACdb}}},
@@ -7573,6 +7623,23 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   langid = {english}
 }
 
+@misc{Xiong2021,
+  title = {Nystr{\"o}mformer: {{A Nystr{\"o}m-Based Algorithm}} for {{Approximating Self-Attention}}},
+  shorttitle = {Nystr{\"o}mformer},
+  author = {Xiong, Yunyang and Zeng, Zhanpeng and Chakraborty, Rudrasis and Tan, Mingxing and Fung, Glenn and Li, Yin and Singh, Vikas},
+  year = {2021},
+  month = mar,
+  number = {arXiv:2102.03902},
+  eprint = {2102.03902},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2102.03902},
+  urldate = {2025-09-08},
+  abstract = {Transformers have emerged as a powerful tool for a broad range of natural language processing tasks. A key component that drives the impressive performance of Transformers is the self-attention mechanism that encodes the influence or dependence of other tokens on each specific token. While beneficial, the quadratic complexity of self-attention on the input sequence length has limited its application to longer sequences -- a topic being actively studied in the community. To address this limitation, we propose Nystr{\textbackslash}"\{o\}mformer -- a model that exhibits favorable scalability as a function of sequence length. Our idea is based on adapting the Nystr{\textbackslash}"\{o\}m method to approximate standard self-attention with \$O(n)\$ complexity. The scalability of Nystr{\textbackslash}"\{o\}mformer enables application to longer sequences with thousands of tokens. We perform evaluations on multiple downstream tasks on the GLUE benchmark and IMDB reviews with standard sequence length, and find that our Nystr{\textbackslash}"\{o\}mformer performs comparably, or in a few cases, even slightly better, than standard self-attention. On longer sequence tasks in the Long Range Arena (LRA) benchmark, Nystr{\textbackslash}"\{o\}mformer performs favorably relative to other efficient self-attention methods. Our code is available at https://github.com/mlpen/Nystromformer.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
+}
+
 @article{Xiong2024,
   title = {{{DeepGSEA}}: explainable deep gene set enrichment analysis for single-cell transcriptomic data},
   shorttitle = {{{DeepGSEA}}},
@@ -7771,6 +7838,23 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   copyright = {2022 The Author(s), under exclusive licence to Springer Nature America, Inc.},
   langid = {english},
   keywords = {Computational models,Epigenomics,Machine learning,Software}
+}
+
+@misc{Zaheer2021,
+  title = {Big {{Bird}}: {{Transformers}} for {{Longer Sequences}}},
+  shorttitle = {Big {{Bird}}},
+  author = {Zaheer, Manzil and Guruganesh, Guru and Dubey, Avinava and Ainslie, Joshua and Alberti, Chris and Ontanon, Santiago and Pham, Philip and Ravula, Anirudh and Wang, Qifan and Yang, Li and Ahmed, Amr},
+  year = {2021},
+  month = jan,
+  number = {arXiv:2007.14062},
+  eprint = {2007.14062},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2007.14062},
+  urldate = {2025-09-08},
+  abstract = {Transformers-based models, such as BERT, have been one of the most successful deep learning models for NLP. Unfortunately, one of their core limitations is the quadratic dependency (mainly in terms of memory) on the sequence length due to their full attention mechanism. To remedy this, we propose, BigBird, a sparse attention mechanism that reduces this quadratic dependency to linear. We show that BigBird is a universal approximator of sequence functions and is Turing complete, thereby preserving these properties of the quadratic, full attention model. Along the way, our theoretical analysis reveals some of the benefits of having \$O(1)\$ global tokens (such as CLS), that attend to the entire sequence as part of the sparse attention mechanism. The proposed sparse attention can handle sequences of length up to 8x of what was previously possible using similar hardware. As a consequence of the capability to handle longer context, BigBird drastically improves performance on various NLP tasks such as question answering and summarization. We also propose novel applications to genomics data.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning,Statistics - Machine Learning}
 }
 
 @article{Zamanighomi2018,
