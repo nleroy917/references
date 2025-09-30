@@ -1140,6 +1140,23 @@
   abstract = {Knowledge of the expression profile and spatial landscape of the transcriptome in individual cells is essential for understanding the rich repertoire of cellular behaviors. Here, we report multiplexed error-robust fluorescence in situ hybridization (MERFISH), a single-molecule imaging approach that allows the copy numbers and spatial localizations of thousands of RNA species to be determined in single cells. Using error-robust encoding schemes to combat single-molecule labeling and detection errors, we demonstrated the imaging of 100 to 1000 distinct RNA species in hundreds of individual cells. Correlation analysis of the {\textasciitilde}104 to 106 pairs of genes allowed us to constrain gene regulatory networks, predict novel functions for many unannotated genes, and identify distinct spatial distribution patterns of RNAs that correlate with properties of the encoded proteins.}
 }
 
+@inproceedings{Chen2016,
+  title = {{{XGBoost}}: {{A Scalable Tree Boosting System}}},
+  shorttitle = {{{XGBoost}}},
+  booktitle = {Proceedings of the 22nd {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Chen, Tianqi and Guestrin, Carlos},
+  year = {2016},
+  month = aug,
+  eprint = {1603.02754},
+  primaryclass = {cs},
+  pages = {785--794},
+  doi = {10.1145/2939672.2939785},
+  urldate = {2025-09-30},
+  abstract = {Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable end-to-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning}
+}
+
 @article{Chen2018,
   title = {Joint single-cell {{DNA}} accessibility and protein epitope profiling reveals environmental regulation of epigenomic heterogeneity},
   author = {Chen, Xingqi and Litzenburger, Ulrike M. and Wei, Yuning and Schep, Alicia N. and LaGory, Edward L. and Choudhry, Hani and Giaccia, Amato J. and Greenleaf, William J. and Chang, Howard Y.},
@@ -2518,19 +2535,22 @@
   keywords = {Dynamic Bayesian networks,EM algorithms,Gibbs sampling,hidden Markov models,state space models,variational methods}
 }
 
-@misc{Gharavi2021a,
+@article{Gharavi2021,
   title = {Embeddings of genomic region sets capture rich biological associations in lower dimensions},
-  author = {Gharavi, Erfaneh and Gu, Aaron and Zheng, Guangtao and Smith, Jason P. and Zhang, Aidong and Brown, Donald E. and Sheffield, Nathan C.},
+  author = {Gharavi, Erfaneh and Gu, Aaron and Zheng, Guangtao and Smith, Jason P. and Cho, Hyun Jae and Zhang, Aidong and Brown, Donald E. and Sheffield, Nathan C.},
   year = {2021},
-  month = may,
-  pages = {2021.05.07.443166},
-  institution = {Cold Spring Harbor Laboratory},
-  doi = {10.1101/2021.05.07.443166},
-  urldate = {2021-09-16},
-  abstract = {Motivation Genomic region sets summarize functional genomics data and define locations of interest in the genome such as regulatory regions or transcription factor binding sites. The number of publicly available region sets has increased dramatically, leading to challenges in data analysis. Results We propose a new method to represent genomic region sets as vectors, or embeddings, using an adapted word2vec approach. We compared our approach to two simpler methods based on interval unions or term frequency-inverse document frequency and evaluated the methods in three ways: First, by classifying the cell line, antibody, or tissue type of the region set; second, by assessing whether similarity among embeddings can reflect simulated random perturbations of genomic regions; and third, by testing robustness of the proposed representations to different signal thresholds for calling peaks. Our word2vec-based region set embeddings reduce dimensionality from more than a hundred thousand to 100 without significant loss in classification performance. The vector representation could identify cell line, antibody, and tissue type with over 90\% accuracy. We also found that the vectors could quantitatively summarize simulated random perturbations to region sets and are more robust to subsampling the data derived from different peak calling thresholds. Our evaluations demonstrate that the vectors retain useful biological information in relatively lower-dimensional spaces. We propose that vector representation of region sets is a promising approach for efficient analysis of genomic region data. Availability https://github.com/databio/regionset-embedding},
-  chapter = {New Results},
-  copyright = {{\copyright} 2021, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
-  langid = {english}
+  month = dec,
+  journal = {Bioinformatics (Oxford, England)},
+  volume = {37},
+  number = {23},
+  pages = {4299--4306},
+  issn = {1367-4811},
+  doi = {10.1093/bioinformatics/btab439},
+  abstract = {MOTIVATION: Genomic region sets summarize functional genomics data and define locations of interest in the genome such as regulatory regions or transcription factor binding sites. The number of publicly available region sets has increased dramatically, leading to challenges in data analysis. RESULTS: We propose a new method to represent genomic region sets as vectors, or embeddings, using an adapted word2vec approach. We compared our approach to two simpler methods based on interval unions or term frequency-inverse document frequency and evaluated the methods in three ways: First, by classifying the cell line, antibody or tissue type of the region set; second, by assessing whether similarity among embeddings can reflect simulated random perturbations of genomic regions; and third, by testing robustness of the proposed representations to different signal thresholds for calling peaks. Our word2vec-based region set embeddings reduce dimensionality from more than a hundred thousand to 100 without significant loss in classification performance. The vector representation could identify cell line, antibody and tissue type with over 90\% accuracy. We also found that the vectors could quantitatively summarize simulated random perturbations to region sets and are more robust to subsampling the data derived from different peak calling thresholds. Our evaluations demonstrate that the vectors retain useful biological information in relatively lower-dimensional spaces. We propose that vector representation of region sets is a promising approach for efficient analysis of genomic region data. AVAILABILITY AND IMPLEMENTATION: https://github.com/databio/regionset-embedding. SUPPLEMENTARY INFORMATION: Supplementary data are available at Bioinformatics online.},
+  langid = {english},
+  pmcid = {PMC8652032},
+  pmid = {34156475},
+  keywords = {Genomics,Protein Binding}
 }
 
 @article{Gharavi2024,
@@ -4066,6 +4086,22 @@ Subject\_term\_id: data-mining;genome-informatics;genomics;software}
   doi = {10.1093/gigascience/giae033},
   urldate = {2024-07-20},
   abstract = {As biological data increase, we need additional infrastructure to share them and promote interoperability. While major effort has been put into sharing data, relatively less emphasis is placed on sharing metadata. Yet, sharing metadata is also important and in some ways has a wider scope than sharing data themselves.Here, we present PEPhub, an approach to improve sharing and interoperability of biological metadata. PEPhub provides an API, natural-language search, and user-friendly web-based sharing and editing of sample metadata tables. We used PEPhub to process more than 100,000 published biological research projects and index them with fast semantic natural-language search. PEPhub thus provides a fast and user-friendly way to finding existing biological research data or to share new data.https://pephub.databio.org}
+}
+
+@article{LeRoy2025,
+  title = {Fast, memory-efficient genomic interval tokenizers for modern machine learning},
+  author = {LeRoy, Nathan J and Stadick, Seth and Campbell Jr, Donald R and Khoroshevskyi, Oleksandr and Hu, Claude and Sheffield, Nathan C},
+  year = {2025},
+  month = sep,
+  journal = {Submitted}
+}
+
+@article{LeRoy2025a,
+  title = {Atacformer: {{A}} transformer-based foundation model for analysis and interpretation of {{ATAC-seq}} data},
+  author = {LeRoy, Nathan J and Zheng, Guangtao and Khoroshevskyi, Oleksandr and Campbell Jr, Donald R and Zhang, Aidong and Sheffield, Nathan C},
+  year = {2025},
+  month = sep,
+  journal = {Submitted}
 }
 
 @article{Lever2016,
@@ -6259,6 +6295,23 @@ Subject\_term\_id: computational-biology-and-bioinformatics;data-processing}
   isbn = {978-1-0716-1787-8},
   langid = {english},
   keywords = {Antibodies,Biotherapeutics,Developability,Generative Models,Machine Learning,Masked Language Models}
+}
+
+@article{Sheffield2012,
+  title = {Identifying and characterizing regulatory sequences in the human genome with chromatin accessibility assays},
+  author = {Sheffield, Nathan C. and Furey, Terrence S.},
+  year = {2012},
+  month = oct,
+  journal = {Genes},
+  volume = {3},
+  number = {4},
+  pages = {651--670},
+  issn = {2073-4425},
+  doi = {10.3390/genes3040651},
+  abstract = {After finishing a human genome reference sequence in 2002, the genomics community has turned to the task of interpreting it. A primary focus is to identify and characterize not only protein-coding genes, but all functional elements in the genome. The effort includes both individual investigators and large-scale projects like the Encyclopedia of DNA Elements (ENCODE) project. As part of the ENCODE project, several groups have identified millions of regulatory elements in hundreds of human cell-types using DNase-seq and FAIRE-seq experiments that detect regions of nucleosome-free open chromatin. ChIP-seq experiments have also been used to discover transcription factor binding sites and map histone modifications. Nearly all identified elements are found in non-coding DNA, hypothesizing a function for previously unannotated sequence. In this review, we provide an overview of the ENCODE effort to define regulatory elements, summarize the main results, and discuss implications of the millions of regulatory elements distributed throughout the genome.},
+  langid = {english},
+  pmcid = {PMC3899983},
+  pmid = {24705081}
 }
 
 @article{Sheffield2016,
