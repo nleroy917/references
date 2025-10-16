@@ -236,6 +236,24 @@
   pmid = {26555596}
 }
 
+@article{Asgari2015a,
+  title = {Continuous {{Distributed Representation}} of {{Biological Sequences}} for {{Deep Proteomics}} and {{Genomics}}},
+  author = {Asgari, Ehsaneddin and Mofrad, Mohammad R. K.},
+  year = {2015},
+  month = nov,
+  journal = {PLOS ONE},
+  volume = {10},
+  number = {11},
+  pages = {e0141287},
+  publisher = {Public Library of Science},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0141287},
+  urldate = {2025-10-16},
+  abstract = {We introduce a new representation and feature extraction method for biological sequences. Named bio-vectors (BioVec) to refer to biological sequences in general with protein-vectors (ProtVec) for proteins (amino-acid sequences) and gene-vectors (GeneVec) for gene sequences, this representation can be widely used in applications of deep learning in proteomics and genomics. In the present paper, we focus on protein-vectors that can be utilized in a wide array of bioinformatics investigations such as family classification, protein visualization, structure prediction, disordered protein identification, and protein-protein interaction prediction. In this method, we adopt artificial neural network approaches and represent a protein sequence with a single dense n-dimensional vector. To evaluate this method, we apply it in classification of 324,018 protein sequences obtained from Swiss-Prot belonging to 7,027 protein families, where an average family classification accuracy of 93\%{\textpm}0.06\% is obtained, outperforming existing family classification methods. In addition, we use ProtVec representation to predict disordered proteins from structured proteins. Two databases of disordered sequences are used: the DisProt database as well as a database featuring the disordered regions of nucleoporins rich with phenylalanine-glycine repeats (FG-Nups). Using support vector machine classifiers, FG-Nup sequences are distinguished from structured protein sequences found in Protein Data Bank (PDB) with a 99.8\% accuracy, and unstructured DisProt sequences are differentiated from structured DisProt sequences with 100.0\% accuracy. These results indicate that by only providing sequence data for various proteins into this model, accurate information about protein structure can be determined. Importantly, this model needs to be trained only once and can then be applied to extract a comprehensive set of information regarding proteins of interest. Moreover, this representation can be considered as pre-training for various applications of deep learning in bioinformatics. The related data is available at Life Language Processing Website: http://llp.berkeley.edu and Harvard Dataverse: http://dx.doi.org/10.7910/DVN/JMFHTN.},
+  langid = {english},
+  keywords = {Bioinformatics,Biophysics,Protein domains,Protein structure,Protein structure databases,Protein structure prediction,Structural proteins,Support vector machines}
+}
+
 @article{Ashburner2000,
   title = {Gene ontology: tool for the unification of biology. {{The Gene Ontology Consortium}}},
   shorttitle = {Gene ontology},
@@ -4999,6 +5017,21 @@ Subject\_term\_id: data-mining;genome-informatics;genomics;software}
   keywords = {Computer Science - Computation and Language}
 }
 
+@article{Min2017,
+  title = {Chromatin accessibility prediction via convolutional long short-term memory networks with k-mer embedding},
+  author = {Min, Xu and Zeng, Wanwen and Chen, Ning and Chen, Ting and Jiang, Rui},
+  year = {2017},
+  month = jul,
+  journal = {Bioinformatics},
+  volume = {33},
+  number = {14},
+  pages = {i92-i101},
+  issn = {1367-4803},
+  doi = {10.1093/bioinformatics/btx234},
+  urldate = {2025-10-16},
+  abstract = {Experimental techniques for measuring chromatin accessibility are expensive and time consuming, appealing for the development of computational approaches to predict open chromatin regions from DNA sequences. Along this direction, existing methods fall into two classes: one based on handcrafted k-mer features and the other based on convolutional neural networks. Although both categories have shown good performance in specific applications thus far, there still lacks a comprehensive framework to integrate useful k-mer co-occurrence information with recent advances in deep learning.We fill this gap by addressing the problem of chromatin accessibility prediction with a convolutional Long Short-Term Memory (LSTM) network with k-mer embedding. We first split DNA sequences into k-mers and pre-train k-mer embedding vectors based on the co-occurrence matrix of k-mers by using an unsupervised representation learning approach. We then construct a supervised deep learning architecture comprised of an embedding layer, three convolutional layers and a Bidirectional LSTM (BLSTM) layer for feature learning and classification. We demonstrate that our method gains high-quality fixed-length features from variable-length sequences and consistently outperforms baseline methods. We show that k-mer embedding can effectively enhance model performance by exploring different embedding strategies. We also prove the efficacy of both the convolution and the BLSTM layers by comparing two variations of the network architecture. We confirm the robustness of our model to hyper-parameters by performing sensitivity analysis. We hope our method can eventually reinforce our understanding of employing deep learning in genomic studies and shed light on research regarding mechanisms of chromatin accessibility.The source code can be downloaded from https://github.com/minxueric/ismb2017\_lstm.Supplementary materials are available at Bioinformatics online.}
+}
+
 @misc{Minderer2022,
   title = {Simple {{Open-Vocabulary Object Detection}} with {{Vision Transformers}}},
   author = {Minderer, Matthias and Gritsenko, Alexey and Stone, Austin and Neumann, Maxim and Weissenborn, Dirk and Dosovitskiy, Alexey and Mahendran, Aravindh and Arnab, Anurag and Dehghani, Mostafa and Shen, Zhuoran and Wang, Xiao and Zhai, Xiaohua and Kipf, Thomas and Houlsby, Neil},
@@ -7419,6 +7452,24 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   abstract = {In recent years, many deep-learning based models are proposed for text classification. This kind of models well fits the training set from the statistical point of view. However, it lacks the capacity of utilizing instance-level information from individual instances in the training set. In this work, we propose to enhance neural network models by allowing them to leverage information from \$k\$-nearest neighbor (kNN) of the input text. Our model employs a neural network that encodes texts into text embeddings. Moreover, we also utilize \$k\$-nearest neighbor of the input text as an external memory, and utilize it to capture instance-level information from the training set. The final prediction is made based on features from both the neural network encoder and the kNN memory. Experimental results on several standard benchmark datasets show that our model outperforms the baseline model on all the datasets, and it even beats a very deep neural network model (with 29 layers) in several datasets. Our model also shows superior performance when training instances are scarce, and when the training set is severely unbalanced. Our model also leverages techniques such as semi-supervised training and transfer learning quite well.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+}
+
+@article{Wang2019,
+  title = {A new {{LSTM-based}} gene expression prediction model: {{L-GEPM}}},
+  shorttitle = {A new {{LSTM-based}} gene expression prediction model},
+  author = {Wang, Huiqing and Li, Chun and Zhang, Jianhui and Wang, Jingjing and Ma, Yue and Lian, Yuanyuan},
+  year = {2019},
+  month = aug,
+  journal = {Journal of Bioinformatics and Computational Biology},
+  volume = {17},
+  number = {4},
+  pages = {1950022},
+  issn = {1757-6334},
+  doi = {10.1142/S0219720019500227},
+  abstract = {Molecular biology combined with in silico machine learning and deep learning has facilitated the broad application of gene expression profiles for gene function prediction, optimal crop breeding, disease-related gene discovery, and drug screening. Although the acquisition cost of genome-wide expression profiles has been steadily declining, the requirement generates a compendium of expression profiles using thousands of samples remains high. The Library of Integrated Network-Based Cellular Signatures (LINCS) program used approximately 1000 landmark genes to predict the expression of the remaining target genes by linear regression; however, this approach ignored the nonlinear features influencing gene expression relationships, limiting the accuracy of the experimental results. We herein propose a gene expression prediction model, L-GEPM, based on long short-term memory (LSTM) neural networks, which captures the nonlinear features affecting gene expression and uses learned features to predict the target genes. By comparing and analyzing experimental errors and fitting the effects of different prediction models, the LSTM neural network-based model, L-GEPM, can achieve low error and a superior fitting effect.},
+  langid = {english},
+  pmid = {31617459},
+  keywords = {Algorithms,Computational Biology,Databases Genetic,Deep Learning,Gene expression,Gene Expression,Humans,landmark genes,linear regression,LSTM,Models Genetic,Neural Networks Computer,Nonlinear Dynamics,Sequence Analysis RNA,target genes,Transcriptome}
 }
 
 @article{Wang2020,
