@@ -2389,18 +2389,13 @@
 
 @article{Gandhi2025,
   title = {Tahoe-x1: {{Scaling Perturbation-Trained Single-Cell Foundation Models}} to 3 {{Billion Parameters}}},
-  shorttitle = {Tahoe-x1},
   author = {Gandhi, Shreshth and Javadi, Farnoosh and Svensson, Valentine and Khan, Umair and Jones, Matthew G. and Yu, John and Merico, Daniele and Goodarzi, Hani and Alidoust, Nima},
   year = 2025,
-  month = oct,
+  month = jan,
+  journal = {bioRxiv},
   pages = {2025.10.23.683759},
-  issn = {2692-8205},
   doi = {10.1101/2025.10.23.683759},
-  urldate = {2025-10-26},
-  abstract = {Foundation models have transformed natural language processing and computer vision, yet their potential in single-cell biology particularly for complex diseases such as cancer remains underexplored. We present Tahoe-x1 (Tx1), a family of perturbation-trained single-cell foundation models with up to 3 billion parameters. Tx1 is pretrained on large-scale single-cell transcriptomic datasets, including the Tahoe-100M perturbation compendium, and fine-tuned for cancer-relevant tasks. Through architectural optimizations, data loader refinements, and efficient training strategies, Tx1 achieves 3-30x higher compute efficiency than prior implementations of cell-state models. Tx1 jointly learns representations of genes, cells, and compounds using a masked-expression generative objective that incorporates a drug token, enabling flexible adaptation to diverse downstream applications. We evaluate Tx1 across four key disease-relevant benchmarks: (1) prediction of overall and context-specific gene essentiality, (2) identification of genes contributing to the hallmarks of cancer, (3) cell-type classification, and (4) prediction of perturbation responses in held-out cellular contexts. Tx1 achieves state-of-the-art performance across all tasks. We release pretrained checkpoints, training code, and evaluation workflows to accelerate the development of perturbation-trained single-cell foundation models for applications in precision oncology and beyond.},
-  chapter = {New Results},
-  copyright = {{\copyright} 2025, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution 4.0 International), CC BY 4.0, as described at http://creativecommons.org/licenses/by/4.0/},
-  langid = {english}
+  abstract = {Foundation models have transformed natural language processing and computer vision, yet their potential in single-cell biology particularly for complex diseases such as cancer remains underexplored. We present Tahoe-x1 (Tx1), a family of perturbation-trained single-cell foundation models with up to 3 billion parameters. Tx1 is pretrained on large-scale single-cell transcriptomic datasets, including the Tahoe-100M perturbation compendium, and fine-tuned for cancer-relevant tasks. Through architectural optimizations, data loader refinements, and efficient training strategies, Tx1 achieves 3-30x higher compute efficiency than prior implementations of cell-state models. Tx1 jointly learns representations of genes, cells, and compounds using a masked-expression generative objective that incorporates a drug token, enabling flexible adaptation to diverse downstream applications. We evaluate Tx1 across four key disease-relevant benchmarks: (1) prediction of overall and context-specific gene essentiality, (2) identification of genes contributing to the hallmarks of cancer, (3) cell-type classification, and (4) prediction of perturbation responses in held-out cellular contexts. Tx1 achieves state-of-the-art performance across all tasks. We release pretrained checkpoints, training code, and evaluation workflows to accelerate the development of perturbation-trained single-cell foundation models for applications in precision oncology and beyond.Competing Interest StatementAll listed authors have received compensation and/or equity from Tahoe Therapeutics.}
 }
 
 @misc{Ganin2015,
@@ -6231,32 +6226,26 @@ Subject\_term\_id: computational-biology-and-bioinformatics;data-processing}
   keywords = {Agriculture,Bioinformatics,Biomedical Engineering/Biotechnology,Biomedicine,Biotechnology,general,Life Sciences}
 }
 
-@article{Sarkar2024,
-  title = {Designing {{DNA With Tunable Regulatory Activity Using Discrete Diffusion}}},
-  author = {Sarkar, Anirban and Tang, Ziqi and Zhao, Chris and Koo, Peter K.},
-  year = 2024,
-  month = may,
+@article{Sarkar2025,
+  title = {Designing {{DNA With Tunable Regulatory Activity Using Score-Entropy Discrete Diffusion}}},
+  author = {Sarkar, Anirban and Kang, Yijie and Somia, Nirali and Puccetti, Pablo Mantilla and Zhou, Jessica and Nagai, Masayuki and Tang, Ziqi and Zhao, Chris and Koo, Peter K},
+  year = 2025,
+  month = jan,
+  journal = {bioRxiv},
   pages = {2024.05.23.595630},
   doi = {10.1101/2024.05.23.595630},
-  urldate = {2025-06-22},
-  abstract = {Engineering regulatory DNA sequences with precise activity levels in specific cell types hold immense potential for medicine and biotechnology. However, the vast combinatorial space of possible sequences and the complex regulatory grammars governing gene regulation have proven challenging for existing approaches. Supervised deep learning models that score sequences proposed by local search algorithms ignore the global structure of functional sequence space. While diffusion-based generative models have shown promise in learning these distributions, their application to regulatory DNA has been limited. Evaluating the quality of generated sequences also remains challenging due to a lack of a unified framework that characterizes key properties of regulatory DNA. Here we introduce DNA Discrete Diffusion (D3), a generative framework for conditionally sampling regulatory sequences with targeted functional activity levels. We develop a comprehensive suite of evaluation metrics that assess the functional similarity, sequence similarity, and regulatory composition of generated sequences. Through benchmarking on three high-quality functional genomics datasets spanning human promoters and fly enhancers, we demonstrate that D3 outperforms existing methods in capturing the diversity of cis-regulatory grammars and generating sequences that more accurately reflect the properties of genomic regulatory DNA. Furthermore, we show that D3-generated sequences can effectively augment supervised models and improve their predictive performance, even in data-limited scenarios.},
-  chapter = {New Results},
-  copyright = {{\copyright} 2024, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
-  langid = {english}
+  abstract = {Designing regulatory DNA sequences with precise, cell-type-specific activity is critical for applications in medicine and biotechnology, but remains challenging due to the vast combinatorial space and complex regulatory grammar governing gene expression. Recent deep generative models---including genomic language models and diffusion-based approaches---offer new tools for sequence design, yet lack systematic evaluation frameworks to assess the biological and functional fidelity of generated sequences. Here, we introduce a comprehensive computational framework for evaluating generated sequences based on their functional activity, sequence similarity, and regulatory motif composition relative to natural regulatory DNA. We further present DNA Discrete Diffusion (D3), a score-entropy discrete diffusion model for conditional generation of regulatory sequences. Benchmarking D3 on multiple functional genomics datasets, we find that D3 produces sequences nearly indistinguishable from natural DNA under our evaluation metrics. Unlike previous diffusion models, which often fail to capture the nuanced combinatorial patterns of regulatory elements, D3 effectively recapitulates cell-type-specific activity and motif organization. We also show that D3 learns informative representations even in the absence of conditioning labels, outperforming genomic language models and supervised models trained on naive one-hot encodings. D3 maintains strong performance in low-data regimes and enhances downstream supervised models when its generated sequences are used for data augmentation. Together, our work advances generative design of regulatory DNA and establishes comprehensive evaluation methods to ensure biological fidelity.Competing Interest StatementThe authors have declared no competing interest.}
 }
 
 @article{Schaefer2024,
   title = {Multimodal learning of transcriptomes and text enables interactive single-cell {{RNA-seq}} data exploration with natural-language chats},
   author = {Schaefer, Moritz and Peneder, Peter and Malzl, Daniel and Peycheva, Mihaela and Burton, Jake and Hakobyan, Anna and Sharma, Varun and Krausgruber, Thomas and Menche, J{\"o}rg and Tomazou, Eleni M. and Bock, Christoph},
   year = 2024,
-  month = oct,
+  month = jan,
+  journal = {bioRxiv},
   pages = {2024.10.15.618501},
   doi = {10.1101/2024.10.15.618501},
-  urldate = {2025-06-22},
-  abstract = {Single-cell RNA-seq characterizes biological samples at unprecedented scale and detail, but data interpretation remains challenging. Here we introduce CellWhisperer, a multimodal machine learning model and software that connects transcriptomes and text for interactive single-cell RNA-seq data analysis. CellWhisperer enables the chat-based interrogation of transcriptome data in English language. To train our model, we created an AI-curated dataset with over a million pairs of RNA-seq profiles and matched textual annotations across a broad range of human biology, and we established a multimodal embedding of matched transcriptomes and text using contrastive learning. Our model enables free-text search and annotation of transcriptome datasets by cell types, states, and other properties in a zero-shot manner and without the need for reference datasets. Moreover, Cell-Whisperer answers questions about cells and genes in natural-language chats, using a biologically fluent large language model that we fine-tuned to analyze bulk and single-cell transcriptome data across various biological applications. We integrated CellWhisperer with the widely used CELLxGENE browser, allowing users to in-teractively explore RNA-seq data through an integrated graphical and chat interface. Our method demonstrates a new way of working with transcriptome data, leveraging the power of natural language for single-cell data analysis and establishing an important building block for future AI-based bioinformatics research assistants.},
-  chapter = {New Results},
-  copyright = {{\copyright} 2024, Posted by Cold Spring Harbor Laboratory. The copyright holder for this pre-print is the author. All rights reserved. The material may not be redistributed, re-used or adapted without the author's permission.},
-  langid = {english}
+  abstract = {Single-cell RNA-seq characterizes biological samples at unprecedented scale and detail, but data interpretation remains challenging. Here we introduce CellWhisperer, a multimodal machine learning model and software that connects transcriptomes and text for interactive single-cell RNA-seq data analysis. CellWhisperer enables the chat-based interrogation of transcriptome data in English language. To train our model, we created an AI-curated dataset with over a million pairs of RNA-seq profiles and matched textual annotations across a broad range of human biology, and we established a multimodal embedding of matched transcriptomes and text using contrastive learning. Our model enables free-text search and annotation of transcriptome datasets by cell types, states, and other properties in a zero-shot manner and without the need for reference datasets. Moreover, Cell-Whisperer answers questions about cells and genes in natural-language chats, using a biologically fluent large language model that we fine-tuned to analyze bulk and single-cell transcriptome data across various biological applications. We integrated CellWhisperer with the widely used CELLxGENE browser, allowing users to in-teractively explore RNA-seq data through an integrated graphical and chat interface. Our method demonstrates a new way of working with transcriptome data, leveraging the power of natural language for single-cell data analysis and establishing an important building block for future AI-based bioinformatics research assistants.Competing Interest StatementC.B. is a cofounder and scientific advisor of Myllia Biotechnology and Neurolentech. The remaining authors declare no competing interests.}
 }
 
 @article{Schep2017,
