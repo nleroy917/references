@@ -7334,6 +7334,22 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   langid = {english}
 }
 
+@misc{Vashishth2019,
+  title = {Attention {{Interpretability Across NLP Tasks}}},
+  author = {Vashishth, Shikhar and Upadhyay, Shyam and Tomar, Gaurav Singh and Faruqui, Manaal},
+  year = 2019,
+  month = sep,
+  number = {arXiv:1909.11218},
+  eprint = {1909.11218},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.1909.11218},
+  urldate = {2025-10-26},
+  abstract = {The attention layer in a neural network model provides insights into the model's reasoning behind its prediction, which are usually criticized for being opaque. Recently, seemingly contradictory viewpoints have emerged about the interpretability of attention weights (Jain \& Wallace, 2019; Vig \& Belinkov, 2019). Amid such confusion arises the need to understand attention mechanism more systematically. In this work, we attempt to fill this gap by giving a comprehensive explanation which justifies both kinds of observations (i.e., when is attention interpretable and when it is not). Through a series of experiments on diverse NLP tasks, we validate our observations and reinforce our claim of interpretability of attention through manual evaluation.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
+}
+
 @misc{Vaswani2017,
   title = {Attention {{Is All You Need}}},
   author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
@@ -7348,6 +7364,21 @@ Subject\_term\_id: gene-expression-analysis;genome-wide-analysis-of-gene-express
   abstract = {The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.},
   archiveprefix = {arXiv},
   keywords = {Computer Science - Computation and Language,Computer Science - Machine Learning}
+}
+
+@inproceedings{Vig2019,
+  title = {A {{Multiscale Visualization}} of {{Attention}} in the {{Transformer Model}}},
+  booktitle = {Proceedings of the 57th {{Annual Meeting}} of the {{Association}} for {{Computational Linguistics}}: {{System Demonstrations}}},
+  author = {Vig, Jesse},
+  editor = {{Costa-juss{\`a}}, Marta R. and Alfonseca, Enrique},
+  year = 2019,
+  month = jul,
+  pages = {37--42},
+  publisher = {Association for Computational Linguistics},
+  address = {Florence, Italy},
+  doi = {10.18653/v1/P19-3007},
+  urldate = {2025-10-26},
+  abstract = {The Transformer is a sequence model that forgoes traditional recurrent architectures in favor of a fully attention-based approach. Besides improving performance, an advantage of using attention is that it can also help to interpret a model by showing how the model assigns weight to different input elements. However, the multi-layer, multi-head attention mechanism in the Transformer model can be difficult to decipher. To make the model more accessible, we introduce an open-source tool that visualizes attention at multiple scales, each of which provides a unique perspective on the attention mechanism. We demonstrate the tool on BERT and OpenAI GPT-2 and present three example use cases: detecting model bias, locating relevant attention heads, and linking neurons to model behavior.}
 }
 
 @inproceedings{Vinh2009,
